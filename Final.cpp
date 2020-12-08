@@ -63,9 +63,8 @@ int main(int argc, const char * argv[]) {
                     "4. Register a Patient\n"
                     "5. List of registered patients at a center\n"
                     "6. Find the Testing Centers Near Me\n"
-                    "7. Find the Shortest Path Between Two Centers\n"
-                    "8. Distance Between Any Two Centers\n"
-                    "9. Quit\n";
+                    "7. Distance Between Any Two Centers\n"
+                    "8. Quit\n";
 
     if (argc < 2) {
         die("Missing people file!");
@@ -135,7 +134,9 @@ int main(int argc, const char * argv[]) {
                 string address;
                 getline(cin,address);
 
-                cout << "\nWhat center do you want to register at?" << endl;
+                cout << "\nWhich center of the following do you want to register at?" << endl;
+                cout << "\nRockyMountainUrgentCare-Boulder\nNextCareUrgentCare-Longmont\nAdvancedUrgentCare-Lafayette\nAFCUrgentCare-Louisville\nAdvancedUrgentCare-Westminister\nZipClinicUrgentCare-Westminister\nClinica-Lafayette\nLittleClinic-Broomfield\nNextCareUrgentCare-Broomfield\nRockyMountainUrgentCare-Westminister\nLittleClinic-Erie\nAdvancedUrgentCare-Broomfield\nLittleClinic2-Broomfield\nNextCareUrgentCare-Thornton\nCommunityTest-Thornton\nLittleClinic-Thornton\nAFCUrgentCare-Thornton\nCommunityTest2-Thornton\nThorntonFire-Thornton\nAdvancedUrgentCare-Brighton" << endl << endl;
+                cout << "Type here: " << endl;
                 string center; 
                 getline(cin,center);
                 
@@ -150,6 +151,8 @@ int main(int argc, const char * argv[]) {
             case 5:
             {
                 cout << "\nWhich center's Queue would you like to look at?" << endl;
+                cout << "\nRockyMountainUrgentCare-Boulder\nNextCareUrgentCare-Longmont\nAdvancedUrgentCare-Lafayette\nAFCUrgentCare-Louisville\nAdvancedUrgentCare-Westminister\nZipClinicUrgentCare-Westminister\nClinica-Lafayette\nLittleClinic-Broomfield\nNextCareUrgentCare-Broomfield\nRockyMountainUrgentCare-Westminister\nLittleClinic-Erie\nAdvancedUrgentCare-Broomfield\nLittleClinic2-Broomfield\nNextCareUrgentCare-Thornton\nCommunityTest-Thornton\nLittleClinic-Thornton\nAFCUrgentCare-Thornton\nCommunityTest2-Thornton\nThorntonFire-Thornton\nAdvancedUrgentCare-Brighton" << endl << endl;
+                cout << "Type here: " << endl;
                 string center;
                 cin >> center;
                 
@@ -161,10 +164,12 @@ int main(int argc, const char * argv[]) {
             case 6:
             {
                 cout << "\nWhich center are you at right now?" << endl;
+                cout << "\nRockyMountainUrgentCare-Boulder\nNextCareUrgentCare-Longmont\nAdvancedUrgentCare-Lafayette\nAFCUrgentCare-Louisville\nAdvancedUrgentCare-Westminister\nZipClinicUrgentCare-Westminister\nClinica-Lafayette\nLittleClinic-Broomfield\nNextCareUrgentCare-Broomfield\nRockyMountainUrgentCare-Westminister\nLittleClinic-Erie\nAdvancedUrgentCare-Broomfield\nLittleClinic2-Broomfield\nNextCareUrgentCare-Thornton\nCommunityTest-Thornton\nLittleClinic-Thornton\nAFCUrgentCare-Thornton\nCommunityTest2-Thornton\nThorntonFire-Thornton\nAdvancedUrgentCare-Brighton" << endl << endl;
+                cout << "Type here: " << endl;
                 string name;
                 getline(cin,name);
 
-                cout << "\nHow many miles would you want to search under?" << endl;
+                cout << "\nWhat mile radius would you like to search under?" << endl;
                 int miles;
                 cin >> miles;
                 cout << "\n";
@@ -174,20 +179,14 @@ int main(int argc, const char * argv[]) {
             }
             case 7:
             {
-                cout << "\nWhat is the name of the first center?" << endl;
+                cout << "\nWhat is the name of the first center of the following?" << endl;
+                cout << "\nRockyMountainUrgentCare-Boulder\nNextCareUrgentCare-Longmont\nAdvancedUrgentCare-Lafayette\nAFCUrgentCare-Louisville\nAdvancedUrgentCare-Westminister\nZipClinicUrgentCare-Westminister\nClinica-Lafayette\nLittleClinic-Broomfield\nNextCareUrgentCare-Broomfield\nRockyMountainUrgentCare-Westminister\nLittleClinic-Erie\nAdvancedUrgentCare-Broomfield\nLittleClinic2-Broomfield\nNextCareUrgentCare-Thornton\nCommunityTest-Thornton\nLittleClinic-Thornton\nAFCUrgentCare-Thornton\nCommunityTest2-Thornton\nThorntonFire-Thornton\nAdvancedUrgentCare-Brighton" << endl << endl;
+                cout << "Type here: " << endl;
                 string name1;
                 getline(cin,name1);
-
-                g.dijkstra(name1);
-
-                break;
-            }
-            case 8:
-            {
-                cout << "\nWhat is the name of the first center?" << endl;
-                string name1;
-                getline(cin,name1);
-                cout << "\nWhat is the name of the second center?" << endl;
+                cout << "\nWhat is the name of the second center of the following?" << endl;
+                cout << "\nRockyMountainUrgentCare-Boulder\nNextCareUrgentCare-Longmont\nAdvancedUrgentCare-Lafayette\nAFCUrgentCare-Louisville\nAdvancedUrgentCare-Westminister\nZipClinicUrgentCare-Westminister\nClinica-Lafayette\nLittleClinic-Broomfield\nNextCareUrgentCare-Broomfield\nRockyMountainUrgentCare-Westminister\nLittleClinic-Erie\nAdvancedUrgentCare-Broomfield\nLittleClinic2-Broomfield\nNextCareUrgentCare-Thornton\nCommunityTest-Thornton\nLittleClinic-Thornton\nAFCUrgentCare-Thornton\nCommunityTest2-Thornton\nThorntonFire-Thornton\nAdvancedUrgentCare-Brighton" << endl << endl;
+                cout << "Type here: " << endl;
                 string name2;
                 getline(cin,name2);
 
@@ -195,7 +194,7 @@ int main(int argc, const char * argv[]) {
 
                 break;
             }
-            case 9:
+            case 8:
             default:
             {
                 done = true;
