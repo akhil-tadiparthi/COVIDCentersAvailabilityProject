@@ -19,4 +19,4 @@ Contributors:
 BJ Kim - helped fix some bugs
 
 Open Issues/bugs:
-The program won't throw an error when an invalid location is entered: will soon be fixed! It's just that the user has to enter the location desired exactly as listed in the options.
+None
