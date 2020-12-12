@@ -10,7 +10,7 @@ Dependencies:
 No third party libraries are needed
 
 System Requirements:
-Both Mac and PC shoudl be able to run the program as long as they have the mingw or GCC compiler.
+Both Mac and PC should be able to run the program as long as they have the mingw or GCC compiler.
 
 Team members:
 Akhil Tadiparthi
