@@ -1,4 +1,4 @@
-# Tadiparthi_CSCI2275_FinalProject
+# COVID Recovery Centers Availability Algorithm
 
 Introduction:
 This project mimics a graph of all the covid recovery centers in Boulder County. The interface mostly provides ways of interacting with each of the centers. For example, some functions let the user add new covid testing centers in different locations, by inputting the distance in miles between each. There is also the functionality of a built-in queue for each of the testing center where the user can "admit" patients into the center. This feature takes in data of the patient and stores it at their respective center only. In addition to this framework, the user can interact between test centers with maps being created, finding certain test centers in a specific radius of the starting location, finding the distance between any two test centers, and finding the shortest path to get from one test center to another.
@@ -15,8 +15,6 @@ Both Mac and PC should be able to run the program as long as they have the mingw
 Team members:
 Akhil Tadiparthi
 
-Contributors:
-BJ Kim - helped fix some bugs
 
 Open Issues/bugs:
 None
